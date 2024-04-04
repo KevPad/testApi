@@ -1,0 +1,27 @@
+
+server:
+    port: 9898
+
+spring:
+    application:
+        name: store
+    datasource:
+        password: 
+        username: root
+
+        ### Driver MySQL
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+        ### Drive PostgreSQL
+        # driver-class-name: org.postgresql.Driver
+
+        ### url MySQL
+        url: jdbc:mysql://localhost:3306/store
+
+        ### url PostgreSQL
+        # url: jdbc:postgresql://localhost:3306/store
+    jpa:  
+        show-sql: 'true'
+        # Descomentar hibernate ddl-auto para crear el schema de la bbdd automaticamente
+        # hibernate:
+        #     ddl-auto: update
